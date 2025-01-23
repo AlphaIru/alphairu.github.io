@@ -7,6 +7,10 @@ body {
     font-family: "Comic Sans MS", "Comic Sans", sans-serif;
 }
 
-p {
+.title {
+    text-align: center;
+}
+
+paragraph {
     text-indent: 40px;
 }
