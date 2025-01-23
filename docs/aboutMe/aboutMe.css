@@ -1,5 +1,4 @@
-body
-{
+body {
     background-color: rgb(250, 230, 160);
     margin-left: 20%;
     margin-right: 20%;
@@ -8,6 +7,56 @@ body
     font-family: "Comic Sans MS", "Comic Sans", sans-serif;
 }
 
-p {
+.title_column {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title_row {
+    display: flex;
+}
+
+#title {
+    text-align: right;
+}
+
+#logo {
+    text-align: left;
+    width: 100px;
+}
+
+@media screen and (max-width: 500px) {
+    .title_column {
+        float: left;
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .title_row {
+        display: table;
+        margin: 0 auto;
+    }
+
+    .title_row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    #title {
+        text-align: center;
+    }
+
+    #logo {
+        text-align: center;
+        width: 100px;
+    }
+
+}
+
+#paragraph {
     text-indent: 40px;
 }
