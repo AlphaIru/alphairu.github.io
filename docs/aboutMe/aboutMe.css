@@ -1,10 +1,21 @@
 body {
-    background-color: rgb(250, 230, 160);
-    margin-left: 20%;
-    margin-right: 20%;
-    border: 2px dotted black;
-    padding: 10px 10px 10px 10px;
+    background-color: rgb(240, 160, 190);
+    margin: 30px 5% 30px 5%;
+    border: 3px dotted black;
+    padding: 25px;
     font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+}
+
+.rainbow {
+    background: linear-gradient(
+        90deg,
+      rgba(255,0,0,1) 0%,
+      rgba(241,255,0,1) 30%,
+      rgba(0,142,255,1) 70%,
+      rgba(251,0,255,1) 90%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .title_column {
@@ -19,19 +30,18 @@ body {
 }
 
 #title {
-    text-align: right;
+    text-align: center;
 }
 
 #logo {
-    text-align: left;
-    width: 100px;
+    text-align: center;
+    width: 120px;
 }
 
 @media screen and (max-width: 500px) {
     .title_column {
-        float: left;
+        float: center;
         width: 100%;
-        padding: 10px;
         margin: 0 auto;
     }
 
@@ -48,11 +58,14 @@ body {
 
     #title {
         text-align: center;
+        margin: 0 auto;
+        padding: 0 auto;
     }
 
     #logo {
         text-align: center;
-        width: 100px;
+        margin: 0 auto;
+        padding: 0 auto;
     }
 
 }

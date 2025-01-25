@@ -1,16 +1,67 @@
 body {
-    background-color: rgb(250, 230, 160);
-    margin-left: 20%;
-    margin-right: 20%;
-    border: 2px dotted black;
-    padding: 10px 10px 10px 10px;
+    background-color: rgb(255, 250, 190);
+    margin: 30px 5% 30px 5%;
+    border: 3px dotted black;
+    padding: 25px;
     font-family: "Comic Sans MS", "Comic Sans", sans-serif;
 }
 
-.title {
+#rainbow {
+    background: linear-gradient(
+        90deg,
+        rgba(255,0,0,1) 44%,
+        rgba(241,255,0,1) 48%,
+        rgba(0,142,255,1) 52%,
+        rgba(251,0,255,1) 56%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2, .title{
     text-align: center;
 }
 
-paragraph {
+#paragraph {
     text-indent: 40px;
+}
+
+.column {
+    display: table;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.row {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .row {
+        display: table;
+        margin: 0 auto;
+    }
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#right {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    list-style-type: none;
+}
+
+#left {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
 }
