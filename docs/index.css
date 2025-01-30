@@ -1,25 +1,30 @@
 body {
-    background-color: rgb(255, 250, 190);
+    background-color: lightgoldenrodyellow;
+    border-radius: 20px;
     margin: 30px 5% 30px 5%;
-    border: 3px dotted black;
+    border: 3px solid black;
     padding: 25px;
     font-family: "Comic Sans MS", "Comic Sans", sans-serif;
 }
 
-#rainbow {
-    background: linear-gradient(
-        90deg,
-        rgba(255,0,0,1) 44%,
-        rgba(241,255,0,1) 48%,
-        rgba(0,142,255,1) 52%,
-        rgba(251,0,255,1) 56%
-    );
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.title {
+    text-align: center;
+    font-size: 72px;
+    color: dodgerblue;
 }
 
-h2, .title{
-    text-align: center;
+.intro {
+    color: blue;
+    text-align: left;
+    position: relative;
+    left: 5%;
+}
+
+.disclaimer {
+    color: red;
+    text-align: left;
+    position: relative;
+    left: 5%;
 }
 
 #paragraph {
@@ -27,17 +32,67 @@ h2, .title{
 }
 
 .column {
-    display: table;
-    padding: 10px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0 auto;
+    flex: 50%;
 }
 
 .row {
     display: flex;
-    margin: 0 auto;
     padding: 10px;
+}
+
+#button {
+    transition-duration: 0.4s;
+    margin: 2px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.aboutme {
+    background-color: lightpink;
+    border: 2px solid lightpink;
+    color: black;
+}
+
+.aboutme:hover {
+    background-color: white;
+    color: black;
+}
+
+.bluesky {
+    background-color: cornflowerblue;
+    border: 2px solid cornflowerblue;
+    color: white;
+}
+
+.bluesky:hover {
+    background-color: white;
+    color: black;
+}
+
+.twitch {
+    background-color: mediumslateblue;
+    border: 2px solid mediumslateblue;
+    color: white;
+}
+
+.twitch:hover {
+    background-color: white;
+    color: black;
+}
+
+.github {
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+}
+
+.github:hover {
+    background-color: white;
+    color: black;
 }
 
 @media screen and (max-width: 500px) {
@@ -55,13 +110,26 @@ h2, .title{
 
 #right {
     text-align: center;
-    margin: 0 auto;
-    padding: 0 auto;
     list-style-type: none;
 }
 
 #left {
     text-align: center;
-    margin: 0 auto;
-    padding: 0 auto;
+    list-style-type: none;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+li {
+    position: relative;
+    right: 15px;
+}
+
+.thankyou {
+    font-size: 10px;
 }
