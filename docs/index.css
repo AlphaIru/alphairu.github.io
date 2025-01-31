@@ -1,135 +1,210 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
-    background-color: lightgoldenrodyellow;
-    border-radius: 20px;
-    margin: 30px 5% 30px 5%;
-    border: 3px solid black;
-    padding: 25px;
-    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+	background-color: #fafad2;
+	font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+}
+
+.big_plane {
+	background-color: #D2D2FA;
+	border-radius: 20px;
+	margin: 30px 5% 30px 5%;
+	padding: 25px;
+	box-shadow: 7px 7px;
 }
 
 .title {
-    text-align: center;
-    font-size: 72px;
-    color: dodgerblue;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	font-size: 32px;
+	background-color: #D2FAE6;
+	color: dodgerblue;
+	box-shadow: 7px 7px black;
+
 }
 
-.intro {
-    color: blue;
-    text-align: left;
-    position: relative;
-    left: 5%;
+.leftcolumn {
+	float: left;
+	width: 66%;
 }
 
-.disclaimer {
-    color: red;
-    text-align: left;
-    position: relative;
-    left: 5%;
+.rightcolumn {
+	float: right;
+	width: 33%;
+	padding-left: 20px;
+}
+
+.card {
+	background-color: #FAD2E6;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 10px;
+	box-shadow: 5px 5px;
+}
+
+h1, h2, h3, h5, #paragraph {
+	margin: 7px;
+	padding: 7px;
+}
+
+h2, h3, h5 {
+	text-shadow: 1px 1px black;
+}
+
+h1 {
+	font-size: 200%;
+	text-shadow: 3px 3px black;
+}
+
+.titletext {
+	font-size: 70%;
+	color:khaki;
+	text-shadow: 1px 1px black;
+}
+
+h2 {
+	font-size: 175%;
+}
+
+h3 {
+	font-size: 150%;
+}
+
+h5 {
+	font-size: 100%;
 }
 
 #paragraph {
-    text-indent: 40px;
-}
-
-.column {
-    flex: 50%;
-}
-
-.row {
-    display: flex;
-    padding: 10px;
-}
-
-#button {
-    transition-duration: 0.4s;
-    margin: 2px;
-    padding: 10px 20px;
-    border-radius: 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-.aboutme {
-    background-color: lightpink;
-    border: 2px solid lightpink;
-    color: black;
-}
-
-.aboutme:hover {
-    background-color: white;
-    color: black;
-}
-
-.bluesky {
-    background-color: cornflowerblue;
-    border: 2px solid cornflowerblue;
-    color: white;
-}
-
-.bluesky:hover {
-    background-color: white;
-    color: black;
-}
-
-.twitch {
-    background-color: mediumslateblue;
-    border: 2px solid mediumslateblue;
-    color: white;
-}
-
-.twitch:hover {
-    background-color: white;
-    color: black;
-}
-
-.github {
-    background-color: black;
-    border: 2px solid black;
-    color: white;
-}
-
-.github:hover {
-    background-color: white;
-    color: black;
-}
-
-@media screen and (max-width: 500px) {
-    .row {
-        display: table;
-        margin: 0 auto;
-    }
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-#right {
-    text-align: center;
-    list-style-type: none;
-}
-
-#left {
-    text-align: center;
-    list-style-type: none;
-}
-
-ul.no-bullets {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
+	font-size: 125%;
+	text-indent: 40px;
 }
 
 li {
-    position: relative;
-    right: 15px;
+	font-size: 100%;
 }
 
-.thankyou {
-    font-size: 10px;
+#button {
+	transition-duration: 0.2s;
+	margin: 5px 0px;
+	padding: 15px;
+    width: 100%;
+	border-radius: 12px;
+	text-align: center;
+	text-decoration: none;
+	display:inline-table;
+	font-size: 150%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+.intro, .disclaimer, .log {
+	position: relative;
+	left: 5%;
+}
+
+.intro {
+	color:royalblue;
+}
+
+.disclaimer {
+	color:tomato;
+}
+
+.log {
+	color:olivedrab;
+}
+
+.weblink {
+	color:cornflowerblue;
+}
+
+.socialmedia {
+	color:yellowgreen;
+}
+
+.aboutme {
+	background-color: lightpink;
+	border: 5px solid lightpink;
+	box-shadow: 3px 3px rgb(200, 150, 160);
+	color: black;
+}
+
+.aboutme:hover {
+	background-color: white;
+	color: black;
+	box-shadow: 0px 0px rgb(200, 150, 160);
+	transform: translate(3px, 3px);
+}
+
+.bluesky {
+	background-color: cornflowerblue;
+	border: 5px solid cornflowerblue;
+	box-shadow: 3px 3px rgb(80, 120, 200);
+	color: white;
+}
+
+.bluesky:hover {
+	background-color: white;
+	box-shadow: 0px 0px rgb(80, 120, 200);
+	color: black;
+	transform: translate(3px, 3px);
+}
+
+.twitch {
+	background-color: mediumslateblue;
+	border: 5px solid mediumslateblue;
+	box-shadow: 3px 3px rgb(100, 80, 200);
+	color: white;
+}
+
+.twitch:hover {
+	background-color: white;
+	box-shadow: 0px 0px rgb(100, 80, 200);
+	color: black;
+	transform: translate(3px, 3px);
+}
+
+.github {
+	background-color: black;
+	border: 5px solid black;
+	box-shadow: 3px 3px black;
+	color: white;
+}
+
+.github:hover {
+	background-color: white;
+	box-shadow: 0px 0px black;
+	color: black;
+	transform: translate(3px, 3px);
+}
+
+.footer {
+	background: #D2FAE6;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 10px;
+	box-shadow: 7px 7px;
+}
+
+.footer-created {
+	color: lightsalmon;
+}
+
+.footer-txt {
+	font-size: 77%;
+	text-indent: 40px;
 }
