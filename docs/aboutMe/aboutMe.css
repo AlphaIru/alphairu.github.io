@@ -109,7 +109,7 @@ body {
 	border-radius: 12px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 	.leftcolumn,
 	.rightcolumn,
 	.leftcolumn_header,
