@@ -3,12 +3,13 @@
 }
 
 body {
-	background-color:rgb(255, 180, 190);
+	background-color: rgb(255, 180, 190);
+	font-size: 16px;
 	font-family: "Comic Sans MS", "Comic Sans", sans-serif;
 }
 
 .big_plane {
-	background-color:#DBB0FF;
+	background-color: #DBB0FF;
 	border-radius: 20px;
 	margin: 30px 5% 30px 5%;
 	border: 7px solid #DBB0FF;
@@ -29,7 +30,7 @@ body {
 }
 
 .returnhome {
-	background-color:#D4FFB0;
+	background-color: #D4FFB0;
 	border: 5px solid #D4FFB0;
 	box-shadow: 3px 3px rgb(190, 230, 140);
 	color: black;
@@ -44,7 +45,7 @@ body {
 }
 
 .pokedialga {
-	background-color:#fafad2;
+	background-color: #fafad2;
 	border: 5px solid #fafad2;
 	box-shadow: 3px 3px rgb(220, 220, 180);
 	color: black;
@@ -59,7 +60,7 @@ body {
 }
 
 .title_column {
-	color:indigo;
+	color: indigo;
 	display: flex;
 	padding: 10px;
 	text-align: center;
@@ -70,13 +71,25 @@ body {
 	display: flex;
 }
 
-.leftcolumn, .leftcolumn_header {
+.leftcolumn,
+.leftcolumn_header,
+.leftcolumn_half {
 	float: left;
 }
 
-.rightcolumn, .rightcolumn_header {
+.rightcolumn,
+.rightcolumn_header,
+.rightcolumn_half {
 	float: right;
 	padding-left: 20px;
+}
+
+.leftcolumn_half {
+	width: 50%;
+}
+
+.rightcolumn_half {
+	width: 50%;
 }
 
 .leftcolumn {
@@ -110,10 +123,13 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+
 	.leftcolumn,
 	.rightcolumn,
 	.leftcolumn_header,
-	.rightcolumn_header {
+	.rightcolumn_header,
+	.leftcolumn_half,
+	.rightcolumn_half {
 		width: 100%;
 		padding: 0;
 	}

@@ -5,6 +5,8 @@
 body {
 	background-color: #fafad2;
 	font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+	font-size: 17px;
+	color: black;
 }
 
 .big_plane {
@@ -15,15 +17,33 @@ body {
 	box-shadow: 7px 7px;
 }
 
-.title {
-	border-radius: 10px;
-	padding: 10px;
-	text-align: center;
-	font-size: 32px;
-	background-color: #D2FAE6;
-	color: dodgerblue;
-	box-shadow: 7px 7px black;
+h1,
+h2,
+h3,
+h5,
+#paragraph {
+	margin: 7px;
+	padding: 7px;
+}
 
+h2,
+h3,
+h5 {
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.card {
+	transition: background-color 100ms linear;
+	background-color: #FAD2E6;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 10px;
+	box-shadow: 5px 5px;
+}
+
+.card:hover {
+	transition: background-color 100ms linear;
+	background-color: rgb(255, 230, 250);
 }
 
 .leftcolumn {
@@ -37,65 +57,53 @@ body {
 	padding-left: 20px;
 }
 
-.card {
-	background-color: #FAD2E6;
-	padding: 10px;
-	margin-top: 20px;
+.title {
 	border-radius: 10px;
-	box-shadow: 5px 5px;
+	padding: 10px;
+	text-align: center;
+	transition: background-color 100ms linear;
+	background-color: #D2FAE6;
+	box-shadow: 7px 7px black;
 }
 
-h1, h2, h3, h5, #paragraph {
-	margin: 7px;
-	padding: 7px;
-}
-
-h2, h3, h5 {
-	text-shadow: 1px 1px black;
+.title:hover {
+	transition: background-color 100ms linear;
+	background-color: rgb(230, 255, 250);
 }
 
 h1 {
-	font-size: 200%;
-	text-shadow: 3px 3px black;
+	font-size: 64px;
+	color: dodgerblue;
+	transition: text-shadow 100ms linear;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .titletext {
-	font-size: 70%;
-	color:khaki;
-	text-shadow: 1px 1px black;
+	font-size: 24px;
+	color: tomato;
+	transition: text-shadow 100ms linear;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-h2 {
-	font-size: 175%;
-}
-
+h2,
 h3 {
-	font-size: 150%;
-}
-
-h5 {
-	font-size: 100%;
+	font-size: 32px;
 }
 
 #paragraph {
-	font-size: 125%;
 	text-indent: 40px;
-}
-
-li {
-	font-size: 100%;
 }
 
 #button {
 	transition-duration: 0.2s;
 	margin: 5px 0px;
 	padding: 15px;
-    width: 100%;
+	width: 100%;
 	border-radius: 12px;
 	text-align: center;
 	text-decoration: none;
-	display:inline-table;
-	font-size: 150%;
+	display: inline-table;
+	font-size: 24px;
 }
 
 .row:after {
@@ -104,36 +112,32 @@ li {
 	clear: both;
 }
 
-@media screen and (max-width: 1000px) {
-	.leftcolumn, .rightcolumn {
-		width: 100%;
-		padding: 0;
-	}
-}
-
-.intro, .disclaimer, .log {
+.intro,
+.disclaimer,
+.log,
+.footer-created {
 	position: relative;
 	left: 5%;
 }
 
 .intro {
-	color:royalblue;
+	color: royalblue;
 }
 
 .disclaimer {
-	color:tomato;
+	color: tomato;
 }
 
 .log {
-	color:olivedrab;
+	color: olivedrab;
 }
 
 .weblink {
-	color:cornflowerblue;
+	color: cornflowerblue;
 }
 
 .socialmedia {
-	color:yellowgreen;
+	color: yellowgreen;
 }
 
 .aboutme {
@@ -143,10 +147,41 @@ li {
 	color: black;
 }
 
+.aboutme:active,
 .aboutme:hover {
 	background-color: white;
 	color: black;
 	box-shadow: 0px 0px rgb(200, 150, 160);
+	transform: translate(3px, 3px);
+}
+
+.discord {
+	background-color: slateblue;
+	border: 5px solid slateblue;
+	box-shadow: 3px 3px rgb(80, 70, 180);
+	color: white;
+}
+
+.discord:active,
+.discord:hover {
+	background-color: white;
+	box-shadow: 0px 0px rgb(80, 70, 180);
+	color: black;
+	transform: translate(3px, 3px);
+}
+
+.telegram {
+	background-color: darkturquoise;
+	border: 5px solid darkturquoise;
+	box-shadow: 3px 3px rgb(0, 180, 190);
+	color: white;
+}
+
+.telegram:active,
+.telegram:hover {
+	background-color: white;
+	box-shadow: 0px 0px rgb(0, 180, 190);
+	color: black;
 	transform: translate(3px, 3px);
 }
 
@@ -157,9 +192,25 @@ li {
 	color: white;
 }
 
+.bluesky:active,
 .bluesky:hover {
 	background-color: white;
 	box-shadow: 0px 0px rgb(80, 120, 200);
+	color: black;
+	transform: translate(3px, 3px);
+}
+
+.twitter {
+	background-color: royalblue;
+	border: 5px solid royalblue;
+	box-shadow: 3px 3px rgb(40, 80, 210);
+	color: white;
+}
+
+.twitter:active,
+.twitter:hover {
+	background-color: white;
+	box-shadow: 0px 0px rgb(40, 80, 210);
 	color: black;
 	transform: translate(3px, 3px);
 }
@@ -171,6 +222,7 @@ li {
 	color: white;
 }
 
+.twitch:active,
 .twitch:hover {
 	background-color: white;
 	box-shadow: 0px 0px rgb(100, 80, 200);
@@ -185,6 +237,7 @@ li {
 	color: white;
 }
 
+.github:active,
 .github:hover {
 	background-color: white;
 	box-shadow: 0px 0px black;
@@ -194,17 +247,109 @@ li {
 
 .footer {
 	background: #D2FAE6;
+	transition: background-color 100ms linear;
 	padding: 10px;
 	margin-top: 20px;
 	border-radius: 10px;
 	box-shadow: 7px 7px;
 }
 
+.footer:hover {
+	background: rgb(230, 250, 250);
+	transition: background-color 100ms linear;
+}
+
 .footer-created {
+	font-size: 20px;
 	color: lightsalmon;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .footer-txt {
-	font-size: 77%;
+	font-size: 12px;
 	text-indent: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+	body {
+		font-size: 27px;
+	}
+
+	h1 {
+		font-size: 72px;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
+	.titletext {
+		font-size: 32px;
+		color: khaki;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
+	.big_plane {
+		box-shadow: 11px 11px;
+	}
+
+	.title,
+	.card,
+	.footer {
+		box-shadow: 7px 7px black;
+	}
+
+	.aboutme {
+		box-shadow: 5px 5px rgb(200, 150, 160);
+	}
+
+	.aboutme:active {
+		box-shadow: 0px 0px rgb(200, 150, 160);
+		transform: translate(5px, 5px);
+	}
+
+	.bluesky {
+		box-shadow: 5px 5px rgb(80, 120, 200);
+	}
+
+	.bluesky:active {
+		box-shadow: 0px 0px rgb(80, 120, 200);
+		transform: translate(5px, 5px);
+	}
+
+	.twitch {
+		box-shadow: 5px 5px rgb(100, 80, 200);
+	}
+
+	.twitch:active {
+		box-shadow: 0px 0px rgb(100, 80, 200);
+		transform: translate(5px, 5px);
+	}
+
+	.github {
+		box-shadow: 5px 5px black;
+	}
+
+	.github:active {
+		box-shadow: 0px 0px black;
+		transform: translate(5px, 5px);
+	}
+
+	h2,
+	h3 {
+		font-size: 48px;
+	}
+
+	h2,
+	h3,
+	h5 {
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
+	#button {
+		font-size: 32px;
+	}
+
+	.leftcolumn,
+	.rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
 }
