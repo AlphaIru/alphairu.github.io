@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url(images/backgrounds/leaf.png);
+    background-repeat: repeat;
+    background-size: auto;
+    font-family: "Meiryo", "Yu Gothic", Arial, Helvetica, sans-serif;
+
+    word-wrap: break-word;
+}
+
+.sidenav {
+    background-image: url(images/backgrounds/momiji.png);
+    background-repeat: auto;
+
+    overflow-x: hidden;
+
+    border-bottom: 5px ridge skyblue;
+
+    overflow: hidden;
+}
+
+.sidenav .navTitle {
+
+    background-image: url(images/backgrounds/dots.png);
+    background-repeat: auto;
+
+    margin: 0px;
+    padding: 10px;
+
+    text-align: center;
+
+    border-bottom: 5px ridge skyblue;
+    z-index: 10;
+
+    flex-shrink: 0;
+
+}
+
+.navLinks {
+    flex-grow: 1;
+    overflow-y: scroll;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 150px;
+}
+
+.navLinks li a {
+    color: black;
+    margin: 10px;
+    padding: 5px;
+
+    text-decoration: none;
+    text-align: left;
+
+    display: block;
+}
+
+.navLinks li a:hover {
+    color: darksalmon;
+}
+
+.content {
+    margin: 20px;
+    padding: 20px;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .sidenav {
+        height: 100%;
+        width: 200px;
+
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+
+        border-right: 5px ridge skyblue;
+        border-bottom: none;
+
+        background-image: url(images/backgrounds/momiji.png);
+        background-repeat: auto;
+
+        overflow-x: hidden;
+    }
+
+    .navlinks {
+        height: 100%
+    }
+
+    .content {
+        margin-left: 200px;
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,5 @@
+momiji.png, leaf.png, dots.png
+ - https://frame-illust.com
+
+kanae_chan.png
+ - Artwork by: PokeDialga
