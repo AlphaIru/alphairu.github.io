@@ -93,8 +93,8 @@ body {
         overflow-x: hidden;
     }
 
-    .navlinks {
-        height: 100%
+    .navLinks {
+        height: auto;
     }
 
     .content {

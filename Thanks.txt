@@ -3,3 +3,6 @@ momiji.png, leaf.png, dots.png
 
 kanae_chan.png
  - Artwork by: PokeDialga
+
+HTML, CSS template:
+ - www.w3schools.com
