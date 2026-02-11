@@ -13,14 +13,9 @@ body {
 }
 
 .sidenav {
-    background-image: url(images/backgrounds/momiji.png);
-    background-repeat: auto;
-
-    overflow-x: hidden;
+    overflow: hidden;
 
     border-bottom: 5px ridge skyblue;
-
-    overflow: hidden;
 }
 
 .sidenav .navTitle {
@@ -41,7 +36,9 @@ body {
 }
 
 .navLinks {
-    flex-grow: 1;
+    background-image: url(images/backgrounds/momiji.png);
+    background-attachment: local;
+
     overflow-y: scroll;
 
     margin: 0;
@@ -54,6 +51,7 @@ body {
     color: black;
     margin: 10px;
     padding: 5px;
+    padding-left: 20%;
 
     text-decoration: none;
     text-align: left;
@@ -94,11 +92,16 @@ body {
     }
 
     .navLinks {
-        height: auto;
+        overflow-y: auto;
+        height: 100%;
+    }
+
+    .navLinks li a {
+        padding-left: 5px;
     }
 
     .content {
         margin-left: 200px;
-        padding-left: 20px;
+        padding-left: 50px;
     }
 }
